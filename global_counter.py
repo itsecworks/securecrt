@@ -53,9 +53,9 @@ def main():
 
 	# Prompt for a count number
 	#
-	CntNr = crt.Dialog.Prompt("Enter the count number","Define Number", "", False)
+	CntNr = crt.Dialog.Prompt("Enter the number of times the counters should be collected:","Define number of times", "", False)
 	if CntNr == "" :
-		crt.Dialog.MessageBox("Error.\ncount number is a required field!")
+		crt.Dialog.MessageBox("Error.\nThe number of times is a required field!")
 		return
 	
 	CntNr = CntNr.lstrip()
@@ -64,7 +64,7 @@ def main():
 	
 	# Prompt for a sleep time in seconds
 	#
-	szSlTime = crt.Dialog.Prompt("Enter the sleep time between 2 commands","Define a Number", "", False)
+	szSlTime = crt.Dialog.Prompt("Enter the time period between 2 commands [seconds]:","Define the time period", "", False)
 	if szSlTime == "" :
 		crt.Dialog.MessageBox("Error.\n number for sleep time is a required field!")
 		return
